@@ -1,0 +1,19 @@
+import java.applet.*;
+import java.awt.*;
+
+/*
+<applet code="SumApplet.class" width="300" height="200">
+</applet>
+*/
+
+public class SumApplet extends Applet {
+    public void paint(Graphics g) {
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+
+        g.drawString("First Number: " + a, 50, 50);
+        g.drawString("Second Number: " + b, 50, 80);
+        g.drawString("Sum: " + sum, 50, 110);
+    }
+}
